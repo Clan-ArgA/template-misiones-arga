@@ -7,7 +7,7 @@ Copiar a la carpeta scripts la carpeta **teleport**
 ## Instrucciones
 * Colocar:
   ~~~
-  execVM"scripts\teleport\teleport_inicio.sqf";
+  execVM "scripts\teleport\teleport_inicio.sqf";
   ~~~
   en el archivo **initPlayerLocal.sqf**.
 * Colocar dentro de la clase **CfgSounds**:
