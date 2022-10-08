@@ -6,7 +6,8 @@ Template de scripts y archivos básicos para las misiones ArgA
 - Logo ArgA en apartado de "Editores" del Briefing se transparenta
 
 
-###Procesos básicos de GIT
+### Procesos básicos de GIT:
+
 +Clonar:
 - git clone link   //el link se pega con Shift + Insert
 
