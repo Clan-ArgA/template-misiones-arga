@@ -10,6 +10,7 @@ Template de scripts y archivos básicos para las misiones ArgA
 
 +Clonar:
 - git clone link   //el link se pega con Shift + Insert
+- git clone -b desarrollo link   //para solo clonar desarrollo
 
 
 +Para actualizar:
