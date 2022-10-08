@@ -6,7 +6,7 @@ Template de scripts y archivos básicos para las misiones ArgA
 - Logo ArgA en apartado de "Editores" del Briefing se transparenta
 
 +Clonar:
-- git clone link
+- git clone link   //el link se pega con Shift + Insert
 
 
 +Para actualizar:
