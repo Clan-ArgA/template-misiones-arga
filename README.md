@@ -9,6 +9,16 @@ Template de scripts y archivos básicos para las misiones ArgA
 - git clone link
 
 
++Para actualizar:
+- abrir la terminal en tu repositorio
+- pones git pull
+
+
++Cambiar rama master a desarrollo:
+- git checkout desarrollo // origin
+Trabajar en desrrollo
+
+
 +Subir:
 
 1- Añadir los archivos que queres subir
@@ -23,10 +33,3 @@ Template de scripts y archivos básicos para las misiones ArgA
 - git push
 
 
-+Para actualizar:
-- abrir la terminal en tu repositorio
-- pones git pull
-
-+Cambiar rama master a desarrollo:
-- git checkout desarrollo // origin
-Trabajar en desrrollo
