@@ -24,9 +24,9 @@ Configuración de roles
 
 **ACE_IsEngineer:** Setea el rol de Ingeniero   
 **ACE_isEOD:** Setea el rol de Experto en Explosivos    
-**ace_medical_medicClass:** Setea el rol de  Médico  
+**ace_medical_medicClass:** Setea el rol de Médico  
 **ACE_isRepairVehicle:** Setea el vehículo de reparación   
-**ace_medical_medicClass:** Setea el vehículo médico  
+**ace_medical_medicClass:** Setea el vehículo médico y licencia Enfermero
 **ACE_isRepairFacility:** Setea un objeto de reparación   
 **ACE_GForceCoef:** Setea la reducción de la fuerza G  
 
