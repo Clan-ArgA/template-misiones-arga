@@ -12,6 +12,8 @@
 - [Sentencias de Ambiente](#Sentencias-de-Ambiente)
 - [Roles permitidos](#Roles-permitidos)
 - [Nombres alternativos permitidos y su conversión al rol correspondiente](#Nombres-alternativos-permitidos-y-su-conversión-al-rol-correspondiente)
+- [Adicionar sonidos al escenario](#Adicionar-sonidos-al-escenario)
+- [Reproducir sonido dada condición en inventario](#Reproducir-sonido-dada-condición-en-inventario)
 
 
 # Sentencias
@@ -229,3 +231,32 @@ Tamaño recomendados 1024x512, 512x256 o cualquiera que respete el 2:1
 	PRUEBA 3		Desconocido
 	any			Desconocido
 
+ ## Adicionar sonidos al escenario
+
+Dirigirse al directorio `NombreMision.Mapa\core` abrir el archivo `sounds.hpp`
+
+Dentro de este, colocar el siguiente código 
+
+```
+class Change1
+{
+  name = "Change2";
+  sound[] = {"sound\Change3.ogg", 15, 1};
+  titles[] = {1, ""};
+};
+```
++ **Change 1** - La clase referenciada en el editor posteriormente.
++ **Change 2** - Nombre del sonido
++ **Change 3** - Nombre del archivo en directorio sound
+
+## Loop de Sonido
+
+```
+while {Alive Object1} do
+{Object2 say3D "Sound1";
+sleep Time;
+```
++ Object 1 - El objeto que, cuando muera/desaparezca/destruya indicará el alto del loop
++ Object 2 - El objeto desde donde se reproduce el sonido
++ Sound1 - La clase del sonido (nombre designado)
++ Time - El tiempo que dura el sonido, si pongo un audio de 5 segundos, poner 5.
