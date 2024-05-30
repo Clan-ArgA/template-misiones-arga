@@ -29,8 +29,8 @@ https://www.youtube.com/watch?v=lC_Re0DEJFI
 
 ## Ejemplos llamadas
     
-    [mortero_1, thisList, "guided", "Medium", true, 100, 250] execVM "scripts\mortero.sqf";
-    [mortero_2, thisList, "safe", "light", false, 200, 380] execVM "scripts\mortero.sqf";
+    [mortero_1, thisList, "guided", "Medium", true, 100, 250] execVM "scripts\settings_mortero.sqf";
+    [mortero_2, thisList, "safe", "light", false, 200, 380] execVM "scripts\settings_mortero.sqf";
 
 
 ## densidad_de_disparo
