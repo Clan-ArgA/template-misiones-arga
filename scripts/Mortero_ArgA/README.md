@@ -14,6 +14,23 @@ Se coloca un disparador en la zona que se quiere que el mortero haga fuego. Se c
 
 El fuego de mortero se hace hacia el grupo de jugadores que entraron dentro del activador. Se puede elegir si se dispara un disparo de advertencia previo. De día es un humo, de noche una bengala.
 
+En el caso de `mortero en mapa` se debe colocar en el `mortero` en:
+
+**Nombre de variable** (cualquier nombre)
+```bash
+mortar_1
+```
+
+**Inic.**
+```bash
+this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}];
+```
+![alt text](image.png)
+
+En el activador:
+
+![alt text](image-1.png)
+
 ## Parametros
 ```bash
 [nombre_mortero, thisList, cantidad_de_disparos, modo_de_disparo, distancia_de_seguridad, tipo_ronda, disparo_de_advertencia] execVM "scripts\mortero.sqf";
