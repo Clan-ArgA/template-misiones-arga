@@ -19,19 +19,21 @@ El fuego de mortero se hace hacia el grupo de jugadores que entraron dentro del 
 [nombre_mortero, thisList, cantidad_de_disparos, modo_de_disparo, distancia_de_seguridad, tipo_ronda, disparo_de_advertencia] execVM "scripts\mortero.sqf";
 ```
 
-* nombre_mortero: Nombre de la variable del mortero. Se coloca en el editor. Si se usa `"offmap"` se activa el mortero fuera del mapa.
-* thisList: se deja así
-* cantidad_de_disparos: Total de rondas a disparar. Si de coloca `"infinite"` en el caso de un mortero en mapa, sigue disparando hasta que es destruido o se sale de la zona del activador.
-* modo_de_disparo: En un mortero en mapa puede ser `"safe"` o `"unsafe"`. En un mortero fuera de mapa, siempre el modo es `"safe"`. El valor por defecto es `"safe"`.
-* distancia_de_seguridad: Es la distancia mínima en metros, entre el punto de impacto y los jugadores. Esta distancia se calcula al momento del disparo por lo cual puede variar al momento del impacto. Esto puede ser más notorio en el caso del mortero en mapa. El valor por defecto es de `100`m.
-* tipo_ronda: Los valores son `"light"`, `"medium"`, `"heavy"`, `"smoke"`, `"flare"`. Ver la tabla de equivalencias. El valor por defecto es `"light"`.
-* disparo_de_advertencia: `true` o `false`. Indica si se hace un disparo de advertencia cuando el mortero es `"offmap"`. De día cae un humo rojo, de noche una bengala roja.  El valor por defecto es `true`.
+* **nombre_mortero**: Nombre de la variable del mortero. Se coloca en el editor. Si se usa `"offmap"` se activa el mortero fuera del mapa.
+* **thisList**: se deja así
+* **cantidad_de_disparos**: Total de rondas a disparar. Si de coloca `"infinite"` en el caso de un mortero en mapa, sigue disparando hasta que es destruido o se sale de la zona del activador.
+* **modo_de_disparo**: En un mortero en mapa puede ser `"safe"` o `"unsafe"`. En un mortero fuera de mapa, siempre el modo es `"safe"`. El valor por defecto es `"safe"`.
+* **distancia_de_seguridad**: Es la distancia mínima en metros, entre el punto de impacto y los jugadores. Esta distancia se calcula al momento del disparo por lo cual puede variar al momento del impacto. Esto puede ser más notorio en el caso del mortero en mapa. El valor por defecto es de `100`m.
+* **tipo_ronda**: Los valores son `"light"`, `"medium"`, `"heavy"`, `"smoke"`, `"flare"`. Ver la tabla de equivalencias. El valor por defecto es `"light"`.
+* **disparo_de_advertencia**: `true` o `false`. Indica si se hace un disparo de advertencia cuando el mortero es `"offmap"`. De día cae un humo rojo, de noche una bengala roja.  El valor por defecto es `true`.
 
 ## Ejemplos llamadas en el activador
     
+```bash
     ["offmap", thisList, 2, "safe", 100, "light", true] execVM "scripts\mortar_fire.sqf";
     [mortar_1, thisList, 2, "safe", 100] execVM "scripts\mortar_fire.sqf";
     [mortar_1, thisList, 2, "unsafe"] execVM "scripts\mortar_fire.sqf";
+```
 
 
 ## tipo_ronda
