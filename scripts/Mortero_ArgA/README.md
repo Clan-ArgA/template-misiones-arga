@@ -7,8 +7,8 @@ Copiar a la carpeta scripts el archivo **mortar_fire.sqf** y la carpeta **ArgA_M
 ## Instrucciones
 
 Existen 2 tipos de uno de este scrip:
-* Mortero Fuera de Mapa: Dispara una ronda de munición sobre un objetivo marcado por un activador, hasta que se agote la munición.
-* Mortero en Mapa: Hay que poner un mortero cin operador con un nombre en la casilla varariable, por ejemplo mortero_1
+* **Mortero Fuera de Mapa**: Dispara una ronda de munición sobre un objetivo marcado por un activador, hasta que se agote la munición.
+* **Mortero en Mapa**: Hay que poner un mortero cin operador con un nombre en la casilla varariable, por ejemplo mortero_1
 
 Se coloca un disparador en la zona que se quiere que el mortero haga fuego. Se coloca una sentencia como las del ejemplo en el mismo.
 
