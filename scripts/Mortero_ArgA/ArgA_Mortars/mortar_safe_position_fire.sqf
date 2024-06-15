@@ -18,9 +18,5 @@ while {!_isSafe} do {
 		_posToFireAt = [_Position, _MinimalSafeDistance, (random 360)] call BIS_fnc_relPos;
 	};
 };
+
 _posToFireAt
-
-
-/*******************************************************************************
-                          Realizado por |ArgA|Vultur|Tte
-*******************************************************************************/
