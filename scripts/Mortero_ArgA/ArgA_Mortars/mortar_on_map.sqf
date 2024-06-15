@@ -20,7 +20,8 @@ ARGA_MortarSpreadImpactPosition = compile preprocessFileLineNumbers "scripts\Arg
 
 params ["_Mortar",["_Position",[]],["_Ammo", 20],["_FireMode", "safe"],["_MinimalSafeDistance", 100]];
 private ["_Rounds","_AmmoType","_IsThereAmmo"];
-["========================= ON MAP ========================="] call MIV_fnc_log;
+
+// ["========================= ON MAP ========================="] call MIV_fnc_log;
 
 _Rounds = 1;
 _AmmoType = getArtilleryAmmo [_Mortar] select 0;

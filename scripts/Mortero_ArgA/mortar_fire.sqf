@@ -9,7 +9,7 @@ ARGA_MortarEnemyCenter = compile preprocessFileLineNumbers "scripts\ArgA_Mortars
 params["_Mortar","_playerGroup","_Ammo",["_FireMode", "safe"],["_MinimalSafeDistance",100],["_typeRound", "light"],["_Is_warning_shot_fired", true]];
 private ["_Position"];
 
-["========================= START ========================="] call MIV_fnc_log;
+// ["========================= START ========================="] call MIV_fnc_log;
 
 _Position = [_Mortar, _playerGroup] call ARGA_MortarEnemyCenter;
 
@@ -27,4 +27,3 @@ if (_Mortar isEqualType "") then {
 // ["offmap", thisList, 2, "safe", 100, "light", true] execVM "scripts\mortar_fire.sqf";
 // [mortar_1, thisList, 2, "safe", 100] execVM "scripts\mortar_fire.sqf";
 // [mortar_1, thisList, 2, "unsafe"] execVM "scripts\mortar_fire.sqf";
-

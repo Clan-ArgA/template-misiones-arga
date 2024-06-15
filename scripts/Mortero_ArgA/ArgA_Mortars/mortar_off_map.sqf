@@ -13,7 +13,7 @@ ARGA_MortarMark            	 	= compile preprocessFileLineNumbers "scripts\ArgA_
 ARGA_MortarSafePositionFire 	= compile preprocessFileLineNumbers "scripts\ArgA_Mortars\mortar_safe_position_fire.sqf";
 ARGA_MortarSpreadImpactPosition = compile preprocessFileLineNumbers "scripts\ArgA_Mortars\mortar_spread_impact_position.sqf";
 
-["========================= OFF MAP ========================="] call MIV_fnc_log;
+// ["========================= OFF MAP ========================="] call MIV_fnc_log;
 
 _MortarAmmoType = toLower _MortarAmmoType;
 
