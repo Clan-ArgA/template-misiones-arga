@@ -15,8 +15,8 @@
 if (hasInterface && !isServer) exitWith {false};		// Ensures only server or HC runs this script
 #include "mortar_setting.sqf";
 
-ARGA_MortarSafePositionFire 	= compile preprocessFileLineNumbers "scripts\ArgA_Mortars\mortar_safe_position_fire.sqf";
-ARGA_MortarSpreadImpactPosition = compile preprocessFileLineNumbers "scripts\ArgA_Mortars\mortar_spread_impact_position.sqf";
+ARGA_MortarSafePositionFire 	= compile preprocessFileLineNumbers "scripts\ArgA_Mortars\functions\fnc_safe_position_fire.sqf";
+ARGA_MortarSpreadImpactPosition = compile preprocessFileLineNumbers "scripts\ArgA_Mortars\functions\fnc_spread_impact_position.sqf";
 
 params ["_Mortar",["_Position",[]],["_Ammo", 20],["_FireMode", "safe"],["_MinimalSafeDistance", 100]];
 private ["_Rounds","_AmmoType","_IsThereAmmo"];
@@ -46,3 +46,7 @@ while {_IsThereAmmo} do
 if (!isNull _Mortar && {alive _Mortar}) then {
     _Mortar setVehicleAmmo 0.0;
 };
+
+/*******************************************************************************
+                          	Modify by |ArgA|Vultur|Tte
+*******************************************************************************/

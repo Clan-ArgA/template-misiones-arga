@@ -5,7 +5,9 @@
 params ["_Position", "_MinimalSafeDistance"];
 Private ["_posToFireAt","_isSafe"];
 
-_posToFireAt = [_Position, _MinimalSafeDistance, (random 360)] call BIS_fnc_relPos;
+// _posToFireAt = [_Position, _MinimalSafeDistance, (random 360)] call BIS_fnc_relPos;
+_posToFireAt = _Position;
+
 _isSafe = False;
 
 while {!_isSafe} do {
@@ -18,5 +20,4 @@ while {!_isSafe} do {
 		_posToFireAt = [_Position, _MinimalSafeDistance, (random 360)] call BIS_fnc_relPos;
 	};
 };
-
 _posToFireAt

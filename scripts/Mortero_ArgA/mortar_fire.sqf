@@ -4,12 +4,12 @@
 
 if (hasInterface && !isServer) exitWith {false};		// Ensures only server or HC runs this script
 
-ARGA_MortarEnemyCenter = compile preprocessFileLineNumbers "scripts\ArgA_Mortars\mortar_enemy_center.sqf";
+ARGA_MortarEnemyCenter = compile preprocessFileLineNumbers "scripts\ArgA_Mortars\functions\fnc_enemy_center.sqf";
 
 params["_Mortar","_playerGroup","_Ammo",["_FireMode", "safe"],["_MinimalSafeDistance",100],["_typeRound", "light"],["_Is_warning_shot_fired", true]];
 private ["_Position"];
 
-// ["========================= START ========================="] call MIV_fnc_log;
+//["========================= START ========================="] call MIV_fnc_log;
 
 _Position = [_Mortar, _playerGroup] call ARGA_MortarEnemyCenter;
 
@@ -21,7 +21,9 @@ if (_Mortar isEqualType "") then {
 	[_Mortar, _Position, _Ammo,_FireMode,_MinimalSafeDistance] execVM "scripts\ArgA_Mortars\mortar_on_map.sqf";
 };
 
-
+/*******************************************************************************
+                          Realizado por |ArgA|Vultur|Tte
+*******************************************************************************/
 
 // In trigger
 // ["offmap", thisList, 2, "safe", 100, "light", true] execVM "scripts\mortar_fire.sqf";
