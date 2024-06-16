@@ -25,11 +25,11 @@ mortar_1
 ```bash
 this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}];
 ```
-![alt text](image.png)
+![alt text](ArgA_Mortars\images\mortar.png)
 
 En el activador:
 
-![alt text](image-1.png)
+![alt text](ArgA_Mortars\images\trigger.png)
 
 ## Parametros
 ```bash
